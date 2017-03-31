@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layoutAnimation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:delay="0.2"
+    android:animationOrder="random"
+    android:animation="@anim/anim_set"
+    />
+<!-- delay,延时为0.2秒；animationOrder动画效果，分为random、reverse、normal;加载动画-->
+

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">测试程序</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test_menu">TestMenuActivity</string>
+    <string name="title_activity_popup">PopupActivity</string>
+    <string name="title_activity_file_read_save">FileReadSaveActivity</string>
+    <string name="title_activity_dom_file">DomFileActivity</string>
+    <string name="title_activity_jsonresolve">JSONResolveActivity</string>
+    <string name="title_activity_sqlite">SQLiteActivity</string>
+    <string name="title_activity_intent">IntentActivityA</string>
+    <string name="title_activity_intent_activity_b">IntentActivityB</string>
+    <string name="title_activity_intent_case">IntentCaseActivity</string>
+    <string name="title_activity_image_view">查看图片</string>
+    <string name="title_activity_activity_group">ActivityGroupActivity</string>
+    <string name="title_activity_handler_message">HandlerMessageActivity</string>
+    <string name="title_activity_async_task">AsyncTaskActivity</string>
+    <string name="title_activity_list_file">ListFileActivity</string>
+    <string name="title_activity_server">ServerActivity</string>
+    <string name="title_activity_system_run">SystemRunActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_broadcast">BroadcastActivity</string>
+    <string name="title_activity_canvers_paint">CanversPaintActivity</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="title_activity_animation_view">AnimationViewActivity</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zzu.wyz.demo" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icontest"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- 启动的第一个activity，action为Main -->
+        <activity
+            android:name=".AnimationViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 配置Activity -->
+        <activity
+            android:name=".TestMenuActivity"
+            android:label="@string/title_activity_test_menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PopupActivity"
+            android:label="@string/title_activity_popup"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FileReadSaveActivity"
+            android:label="@string/title_activity_file_read_save"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DomFileActivity"
+            android:label="@string/title_activity_dom_file"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".JSONResolveActivity"
+            android:label="@string/title_activity_jsonresolve"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SQLiteActivity"
+            android:label="@string/title_activity_sqlite"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".IntentActivityA"
+            android:label="@string/title_activity_intent"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".IntentActivityB"
+            android:label="@string/title_activity_intent_activity_b"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".IntentCaseActivity"
+            android:label="@string/title_activity_intent_case"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- 添加过滤 ，横屏显示 -->
+        <activity
+            android:name=".ImageViewActivity"
+            android:label="@string/title_activity_image_view"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="image/jpeg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityGroupActivity"
+            android:label="@string/title_activity_activity_group"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".HandlerMessageActivity"
+            android:label="@string/title_activity_handler_message"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AsyncTaskActivity"
+            android:label="@string/title_activity_async_task"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ListFileActivity"
+            android:label="@string/title_activity_list_file"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ServiceActivity"
+            android:label="@string/title_activity_server"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- 注册一个service -->
+        <service android:name=".util.MyserviceUtil" />
+
+        <activity
+            android:name=".SystemRunActivity"
+            android:label="@string/title_activity_system_run"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".BroadcastActivity"
+            android:label="@string/title_activity_broadcast"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- 添加广播接收过滤的action，指定广播接收的receiver,基本的配置方式 -->
+        <receiver
+            android:name=".util.BroadcastReceiverUtil"
+            android:enabled="true" >
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.EDIT"/> -->
+                <action android:name="com.zzu.wyz.AXON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".CanversPaintActivity"
+            android:label="@string/title_activity_canvers_paint"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AnimationActivity"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_animation_view"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

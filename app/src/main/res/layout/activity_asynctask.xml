@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AsyncTask异步进度条处理"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/asyncbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+       android:id="@+id/asyncinfo"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/asyncbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启异步加载"/>
+
+</LinearLayout>

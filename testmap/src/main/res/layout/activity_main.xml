@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <Button
+       android:id="@+id/testmap"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="测试地图"/>
+    <Button
+        android:id="@+id/testGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS模拟导航（北京振中-杭州朗新）"/>
+
+    <Button
+        android:id="@+id/testrouteplan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="路径规划"/>
+    <Button
+        android:id="@+id/testoverload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据当前位置规划"/>
+
+</LinearLayout>

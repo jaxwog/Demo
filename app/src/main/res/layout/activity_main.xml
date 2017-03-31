@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#1bb5db"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#1bb5db"
+            android:onClick="onClick"
+
+            android:text="登录/注册"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/collection"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onClick"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="我的收藏" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/collection"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cecece" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@id/line1"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onClick"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="历史记录" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/history"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cecece" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@id/line2"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onClick"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="意见反馈" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/feedback"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cecece" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@id/line3"
+        android:gravity="center_horizontal|center_vertical"
+
+        android:onClick="onClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="设置" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/setting"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cecece" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/setting"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onClick"
+        android:visibility="gone" />
+
+</RelativeLayout>

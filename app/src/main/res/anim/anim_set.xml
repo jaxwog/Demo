@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 配置文件实现动画的缩放+渐变效果，用来控制GridView的图片动画效果-->
+	<alpha
+		android:fromAlpha="1.0"
+		android:toAlpha="0.0"
+		android:duration="3000" />
+	<scale
+		android:fromXScale="1.0"
+		android:toXScale="0.0"
+		android:fromYScale="1.0"
+		android:toYScale="0.0"
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:startOffset="100"
+		android:repeatCount="3"
+		android:duration="3000" />
+</set>

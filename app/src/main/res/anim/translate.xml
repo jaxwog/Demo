@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 配置文件实现动画的平移效果-->
+	<translate
+		android:fromXDelta="0.0"
+		android:toXDelta="50%"
+		android:fromYDelta="0.0"
+		android:toYDelta="150%"
+		android:duration="3000" />
+</set>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bamb"
+    >
+    <TextView
+        android:text="@string/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1bb5db"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/main_pcs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/login_button_selector"
+        android:gravity="center"
+        android:text="拉动看板" />
+    <Button
+        android:id="@+id/main_query"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_button_selector"
+        android:gravity="center"
+        android:text="线旁看板" />
+
+</LinearLayout>

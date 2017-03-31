@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:gravity="center"
+        android:id="@+id/intentamsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent--A数据跳转，与数据传输"
+        android:textSize="20sp"
+        />
+    <Button
+        android:gravity="center"
+        android:id="@+id/intentabut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到界面B"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
