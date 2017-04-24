@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzu.wyz.activity.ValidationActivity">
+
+<com.zzu.wyz.utils.PaintValidationView
+    android:id="@+id/paint_view"
+    android:layout_width="300dp"
+    android:layout_height="300dp" />
+
+    <com.zzu.wyz.utils.AutoText
+        app:layout_constraintTop_toBottomOf="@+id/paint_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:id="@+id/tv_auto"
+        android:text="欢迎来到北京振中电子技术有限公司，我们公司长期开发掌机程序"/>
+
+
+    <Button
+    app:layout_constraintBottom_toTopOf="parent"
+    android:id="@+id/btn_start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="开始吧"/>
+
+</android.support.constraint.ConstraintLayout>

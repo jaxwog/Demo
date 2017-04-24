@@ -1,1 +1,1 @@
-include ':app', ':scan', ':baseadapter', ':testmap', ':heroes', ':bluetooth'
+include ':app', ':scan', ':baseadapter', ':testmap', ':heroes', ':bluetooth', ':ipc'

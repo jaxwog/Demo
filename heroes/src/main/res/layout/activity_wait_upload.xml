@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzu.wyz.activity.WaitUploadActivity">
+
+    <!--<ListView-->
+    <!--android:id="@+id/lv_test"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+
+    <com.zzu.wyz.utils.WheelIndicatorView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/wheel_indicator_view"
+        app:itemsLineWidth="13dp"
+        app:filledPercent="40"
+        app:backgroundColor="@color/white"
+        />
+    <Button
+        app:layout_constraintBottom_toTopOf="parent"
+        android:id="@+id/btn_upstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始动画"/>
+
+</android.support.constraint.ConstraintLayout>
