@@ -1,5 +1,6 @@
 package zzu.wyz.demo;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -107,8 +108,7 @@ public class NotificationActivity extends AppCompatActivity {
         //NotificationManager类通知用户的事件发生。这是你如何告诉用户在后台发生了一些变化。
 
         //取得系统服务ACTIVITY_SERVICE
-        NotificationManager notificationManager = (NotificationManager)super
-                .getSystemService(ACTIVITY_SERVICE);
+        @SuppressLint("ServiceCast") NotificationManager notificationManager = (NotificationManager)super.getSystemService(ACTIVITY_SERVICE);
 
         //Unflatten the notification from a parcel.从一个包裹Unflatten通知
         //下面的构造方法已经过时，并且立即显示

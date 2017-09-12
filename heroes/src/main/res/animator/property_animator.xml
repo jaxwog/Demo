@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<objectAnimator
+    android:propertyName="x"
+    android:duration="2000"
+    android:valueTo="200dp"
+    android:valueType="intType"/>
+    <objectAnimator
+        android:propertyName="y"
+        android:duration="2000"
+        android:valueTo="500dp"
+        android:valueType="intType"/>
+
+</set>

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wyz.ipc">
 
+    <permission
+        android:name="com.wyz.ipc.permission.ACCESS_BOOK_SERVICE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.wyz.ipc.permission.ACCESS_BOOK_SERVICE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -13,15 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SecondActivity"
-            android:process=":remote"></activity>
+            android:process=":remote" />
         <activity
             android:name=".ThirdActivity"
-            android:process="com.wyz.ipc.remote"></activity>
+            android:process="com.wyz.ipc.remote" />
 
         <service
             android:name="com.wyz.messenger.MessengerService"
@@ -29,12 +32,26 @@
 
         <activity android:name="com.wyz.messenger.MessengerActivity">
             <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.wyz.aidl.BookManagerService"
+            android:process=":remote" />
+
+        <activity android:name="com.wyz.aidl.BookManagerActivity">
+
+        </activity>
+        <activity android:name="com.wyz.binderpool.BinderPoolActivity">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <service android:name="com.wyz.binderpool.BinderPoolService"
+            android:process=":remote"/>
     </application>
 
 </manifest>

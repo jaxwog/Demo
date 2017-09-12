@@ -48,7 +48,7 @@ public class WaitUploadActivity extends AppCompatActivity implements View.OnClic
 
         wheelIndicatorView = (WheelIndicatorView) findViewById(R.id.wheel_indicator_view);
 
-        runningActivityIndicatorItem = new WheelIndicatorItem(0.3f, getResources().getColor(R.color.own));
+        runningActivityIndicatorItem = new WheelIndicatorItem(0.1f, getResources().getColor(R.color.own));
 
 
 

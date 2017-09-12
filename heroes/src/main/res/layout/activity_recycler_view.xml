@@ -2,10 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context="com.zzu.wyz.activity.RecyclerViewActivity">
-<TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <TextView
     android:layout_width="match_parent"
     android:layout_weight="2"
     android:layout_height="300dp"
@@ -15,4 +20,17 @@
         android:layout_weight="8"
         android:layout_height="300dp"
         android:background="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <Button
+           android:id="@+id/btn_test"
+           android:text="点击事件"
+           android:layout_width="match_parent"
+           android:layout_height="80dp" />
+   </LinearLayout>
+
+
 </LinearLayout>

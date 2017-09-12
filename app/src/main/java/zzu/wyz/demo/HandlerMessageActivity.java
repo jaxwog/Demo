@@ -150,12 +150,6 @@ public class HandlerMessageActivity extends AppCompatActivity {
 
     //子线程接收主线程发过来的消息，并打印在输出台上；并且传递消息到主线程
     private class ChildThread implements Runnable{
-
-        /**
-         * Starts executing the active part of the class' code. This method is
-         * called when a thread is started that has been created with a class which
-         * implements {@code Runnable}.
-         */
         @Override
         public void run() {
             //初始化当前线程作为消息通道

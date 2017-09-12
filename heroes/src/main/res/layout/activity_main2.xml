@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wyz.touchevent.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.wyz.touchevent.Main2Activity" >
+
+<com.wyz.touchevent.MyButton
+    android:id="@+id/id_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="按钮上移动触发触摸事件" />
+
+</com.wyz.touchevent.MyLinearLayout>

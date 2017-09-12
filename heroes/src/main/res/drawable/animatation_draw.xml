@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/shape_draw_gradient_linear" android:duration="1000"/>
+    <item android:drawable="@drawable/shape_draw_gradient_radius" android:duration="1000"/>
+    <item android:drawable="@drawable/shape_draw_gradient_sweep" android:duration="1000"/>
+
+</animation-list>

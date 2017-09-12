@@ -64,7 +64,7 @@ public class WheelIndicatorView extends View {
     private int filledPercent = 80;
     private int itemsLineWidth = 25;
     private Paint  mWaitTextPaint, mTextPaint;
-    private float mShowTextSize = 50.0f;
+    private float mShowTextSize = 30.0f;
     private String mShowText = "正在消缺验证";
     private int waitNumber = 0;
 
@@ -103,10 +103,10 @@ public class WheelIndicatorView extends View {
             this.mWaitText = this.setWaitNumber(waitNumber);
             this.filledPercent = filledPercent;
             if (filledPercent==100){
-                mShowText = "消缺验证完成";
-                this.mWaitText = "......";
+                mShowText = "消缺结果";
+                this.mWaitText = "成功";
             }else {
-                mShowText ="正在消缺验证";
+                mShowText ="正在消缺";
             }
         }
         invalidate();
@@ -251,7 +251,7 @@ public class WheelIndicatorView extends View {
 
 
         canvas.drawText(mShowText, (int)(this.viewWidth/2-textWidth/2), (int)(this.viewWidth/2) , mTextPaint);
-        canvas.drawText(mWaitText, (int)(this.viewWidth/2-textWidth/4), (int)(this.viewWidth/2+textWidth/2) , mWaitTextPaint);
+        canvas.drawText(mWaitText, (int)(this.viewWidth/2-textWidth/4), (int)(this.viewWidth/2+textWidth/4) , mWaitTextPaint);
 
     }
 

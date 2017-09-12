@@ -2,16 +2,78 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zzu.wyz">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
     <application
+        android:name="com.wyz.crash.TestApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.RecyclerViewActivity" />
 
+        <service android:name=".utils.MyIntentService" />
+
+        <activity
+            android:name=".activity.HandlerActivity"
+            android:label="@string/title_activity_handler"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ValidationActivity" />
+        <activity android:name=".activity.WaitUploadActivity" />
+        <activity android:name="com.wyz.view.FirstListActivity" />
+        <activity android:name="com.wyz.view.TestTouchEventActivity" />
+        <activity android:name="com.wyz.touchevent.Main2Activity" />
+        <activity android:name="com.wyz.touchevent.Main3Activity" />
+        <activity android:name="com.wyz.touchevent.Main4Activity" />
+        <activity android:name="com.wyz.touchevent.CircleActivity" />
+        <activity android:name="com.wyz.mydraw.DrawMainActivity" />
+        <activity android:name="com.wyz.animation.AnimationMainActivity" />
+        <activity android:name="com.wyz.animation.LayoutAnimationActivity" />
+        <activity android:name="com.wyz.animation.AnimationActivity" />
+        <activity android:name="com.wyz.animation.GetAndSetActivity" />
+        <activity android:name="com.wyz.window.WindowMainActivity" />
+        <activity android:name="com.wyz.window.WindowTestActivity" />
+        <activity android:name="com.wyz.window.DialogWindowActivity" />
+
+        <service android:name="com.wyz.window.MyService" />
+
+        <receiver android:name="com.wyz.window.MyReceiver">
+            <intent-filter>
+                <action android:name="com.wyz.receiver.LAUNCH" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wyz.reomteviews.MyWidgetProvider">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info" />
+
+            <intent-filter>
+                <action android:name="com.zzu.wyz.heroes.action.CLICK" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.wyz.reomteviews.MainReomteActivity"
+            android:launchMode="standard"
+            android:process=":remote"></activity>
+        <activity
+            android:name="com.wyz.reomteviews.TZLShowActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name="com.wyz.reomteviews.TZL2Activity"
+            android:launchMode="standard" />
+        <activity
+            android:name="com.wyz.cache.BitmapMainActivity"
+            android:hardwareAccelerated="true">
         </activity>
-        <activity android:name=".activity.RecyclerViewActivity">
+        <activity android:name="com.wyz.crash.CrashMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

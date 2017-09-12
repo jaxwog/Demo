@@ -17,7 +17,9 @@ import com.zzu.wyz.adapter.MainAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+RecyclerView的使用方法
+ */
 public class MainActivity extends AppCompatActivity implements IActivity, View.OnClickListener {
 
     private RecyclerView recyclerView;
